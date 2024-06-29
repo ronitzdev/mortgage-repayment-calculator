@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "JakartaSansBold";
+  src: url("../assets/fonts/static/PlusJakartaSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "JakartaSansMedium";
+  src: url("../assets/fonts/static/PlusJakartaSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}/*# sourceMappingURL=fuentes.css.map */
