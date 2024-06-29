@@ -44,7 +44,6 @@ h2 {
 
 .main {
   min-width: 375px;
-  width: 375px;
   height: 100%;
   margin: 0 auto;
 }
@@ -83,6 +82,7 @@ h2 {
 }
 .form .block-container .input-container:hover {
   border-color: hsl(202, 55%, 16%);
+  cursor: pointer;
 }
 .form button {
   width: 100%;
@@ -100,6 +100,7 @@ h2 {
 }
 .form button:hover {
   background-color: hsla(61, 70%, 52%, 0.5);
+  cursor: pointer;
 }
 .form .radio-container {
   margin-top: 10px;
@@ -142,6 +143,7 @@ h2 {
 }
 .radio-container .radio:hover {
   border: 1px solid hsl(61, 70%, 52%);
+  cursor: pointer;
 }
 
 .input-container {
@@ -156,6 +158,10 @@ h2 {
   border: none;
   font-size: 1.6rem;
   font-family: "JakartaSansBold";
+}
+.input-container > input:focus {
+  outline: none;
+  box-shadow: none;
 }
 .input-container .euro {
   background-color: hsl(202, 86%, 94%);
@@ -228,4 +234,27 @@ h2 {
   color: hsl(0, 0%, 100%);
   font-size: 2.2rem;
   font-family: "JakartaSansBold";
+}
+
+@media screen and (min-width: 375px) {
+  .main {
+    max-width: 686px;
+    margin: 30px 15px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .blocks-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .blocks-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .blocks-container .block-container {
+    flex: 1;
+  }
 }/*# sourceMappingURL=main.css.map */
