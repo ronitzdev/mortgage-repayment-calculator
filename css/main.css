@@ -180,8 +180,8 @@ h2 {
 }
 
 .result-zero {
+  height: 100%;
   display: flex;
-  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -198,7 +198,7 @@ h2 {
 }
 
 .result-total {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 15px;
 }
@@ -236,6 +236,14 @@ h2 {
   font-family: "JakartaSansBold";
 }
 
+.display-flex {
+  display: flex;
+}
+
+.display-none {
+  display: none;
+}
+
 .error-message {
   display: none;
   padding-top: 10px;
@@ -244,6 +252,7 @@ h2 {
 }
 
 .error-message-active {
+  display: block;
   padding-top: 10px;
   color: red;
   font-size: 1.5rem;
@@ -258,6 +267,14 @@ h2 {
 #form .block-container-active .input-container .euro {
   background-color: hsl(4, 69%, 50%);
   color: hsl(0, 0%, 100%);
+}
+
+.radio-container .fondo-active {
+  background-color: hsla(61, 70%, 52%, 0.267);
+}
+
+.radio-container .borde-active {
+  border: 1px solid hsl(61, 70%, 52%);
 }
 
 @media screen and (min-width: 375px) {

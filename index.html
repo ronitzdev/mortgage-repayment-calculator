@@ -16,38 +16,38 @@
         <!-- Form Section -->
         <section class="form-section">
           <h1>Mortgage Calculator</h1>
-          <a href="#">Clear All</a>
+          <a href="#" id="clear-all">Clear All</a>
           <form class="form" id="form" novalidate>
-            <div class="block-container">
+            <div class="block-container" id="block-container-monto">
               <label for="monto">Mortgage Amount</label>
               <div class="input-container"><span class="euro">£</span><input type="number" name="monto" id="monto" required/></div>
-              <span class="error-message">This field is required</span>
+              <span class="error-message" id="error-message-monto">This field is required</span>
             </div>
             <div class="blocks-container">
-              <div class="block-container">
+              <div class="block-container" id="block-container-tiempo">
                 <label for="tiempo">Mortgage Term</label>
                 <div class="input-container"><input type="number" name="tiempo" id="tiempo" required/><span class="euro">years</span></div>
-                <span class="error-message">This field is required</span>
+                <span class="error-message" id="error-message-tiempo">This field is required</span>
               </div>
-              <div class="block-container">
+              <div class="block-container" id="block-container-interes">
                 <label for="interes">Interest Rate</label>
                 <div class="input-container"><input type="number" name="interes" id="interes" required/><span class="euro">%</span></div>
-                <span class="error-message">This field is required</span>
+                <span class="error-message" id="error-message-interes">This field is required</span>
               </div>
             </div>
             <div class="block-container">
               <label for="radio1">Mortgage Type</label>
               <div class="radio-container">
-                <div class="radio">
+                <div class="radio" id="block-container-tipo1">
                   <input type="radio" id="radio1" name="tipo" value="repayment" required/>
                   <label for="radio1">Repayment</label>
                 </div>
-                <div class="radio">
+                <div class="radio" id="block-container-tipo2">
                   <input type="radio" id="radio2" name="tipo" value="interest-only" required/>
                   <label for="radio2">Interest Only</label>
                 </div>
               </div>
-              <span class="error-message">This field is required</span>
+              <span class="error-message" id="error-message-tipo">This field is required</span>
             </div>
             <button type="submit">
               <img src="assets/images/icon-calculator.svg" alt="" />
@@ -57,7 +57,7 @@
         </section>
         <!-- Results Section -->
         <section class="results-section">
-          <div class="result-zero">
+          <div class="result-zero" id="result-zero">
             <img src="assets/images/illustration-empty.svg" alt="" />
             <h2>Results shown here</h2>
             <p>
@@ -65,7 +65,7 @@
               monthly repayments would be.
             </p>
           </div>
-          <div class="result-total">
+          <div class="result-total" id="result-total"">
             <h2>Your results</h2>
             <p>
               Your results are shown below based on the information you provided.
@@ -74,10 +74,10 @@
             </p>
             <div class="card">
               <p>Your monthly repayments</p>
-              <div class="item1">£<span>1,700.74</span></div>
+              <div class="item1"><span id="payments">1,700.74</span></div>
               <hr />
               <p>Total you'll repay over the term</p>
-              <div class="item2">£<span>500,700.00</span></div>
+              <div class="item2"><span id="reimbursement">500,700.00</span></div>
             </div>
           </div>
         </section>

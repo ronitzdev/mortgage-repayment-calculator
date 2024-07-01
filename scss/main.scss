@@ -2,6 +2,7 @@
 //Primary colors
 $lime: hsl(61, 70%, 52%);
 $lime2: hsla(61, 70%, 52%, 0.5);
+$lime3: hsla(61, 70%, 52%, 0.267);
 $red: hsl(4, 69%, 50%);
 //Neutral colors
 $white: hsl(0, 0%, 100%);
@@ -164,10 +165,10 @@ h2 {
   padding: 40px 25px;
   background-color: $slate-900;
 }
-// part1
+// result-zero
 .result-zero {
+  height: 100%;
   display: flex;
-  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -184,7 +185,7 @@ h2 {
 }
 //result total
 .result-total {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 15px;
   h2 {
@@ -221,6 +222,14 @@ h2 {
     }
   }
 }
+//display flex
+.display-flex {
+  display: flex;
+}
+//display none
+.display-none {
+  display: none;
+}
 //errores mensajes
 .error-message {
   display: none;
@@ -229,7 +238,7 @@ h2 {
   font-size: 1.5rem;
 }
 .error-message-active {
-  //display: block;
+  display: block;
   padding-top: 10px;
   color: red;
   font-size: 1.5rem;
@@ -246,6 +255,13 @@ h2 {
       color: $white;
     }
   }
+}
+//fondo radio exito
+.radio-container .fondo-active {
+  background-color: $lime3;
+}
+.radio-container .borde-active {
+  border: 1px solid $lime;
 }
 //media querys
 @media screen and (min-width: 375px) {
